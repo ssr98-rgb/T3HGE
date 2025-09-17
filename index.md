@@ -7,7 +7,7 @@ authors:
 affiliations:
 paper: 
 video: 
-code: https://github.com/ssr98-rgb/THGE-code
+code: https://github.com/ssr98-rgb/THGE-main
 data:
 ---
 
