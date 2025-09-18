@@ -2,21 +2,30 @@
 layout: project_page
 permalink: /
 
-title: Text-guided 3D Human Garment Editing with Precise Localization and Cross-View Consistency
+title: "T3HGE: High-fidelity Text-Driven 3D Human Garment Editing with Body Priors"
 authors:
 affiliations:
 paper: 
 video: 
-code: https://github.com/ssr98-rgb/THGE-main
+code: 
 data:
 ---
+
+<!-- Code availability note -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified" style="margin-bottom:20px;">
+      <p><b>We will release the full code after the paper has been peer-reviewed and accepted.</b></p>
+    </div>
+  </div>
+</div>
 
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-Recent advances in 2D diffusion models have substantially facilitated progress in 3D editing. Nevertheless, text-driven human garment editing remains largely underexplored, and existing methods often lead to inaccurate localization and multi-view inconsistencies. To address these issues, this work proposes Text-guided 3D Human Garment Editing (THGE), a dual-domain 2D–3D framework for precise localization and consistent editing. Specifically, 2D–3D co-localization with virtual Gaussian seeding is introduced to obtain robust target localization by merging garment masks before and after editing, while virtual Gaussians seeded along SMPL-X normals resolve the absence of corresponding Gaussians caused by garment extension or deformation. Second, SMPL-X-vertex guided cross-view consistent editing further enforces multi-view consistency without extra training by aggregating tokens of the same SMPL-X vertex across key views and propagating weighted features to other views. Finally, dual-domain 2D–3D Gaussian pruning is proposed to remove out-of-bound Gaussians by comparing masks rendered from labeled Gaussians with reference 2D masks, while an SDF-based human distance field constrains duplication and splitting to prevent Gaussians overflow. Experiments on multi-person and multi-garment scenarios demonstrate that THGE achieves superior visual quality and consistency over state-of-the-art methods.        </div>
+While 3D Gaussian editing has seen substantial progress, text-driven human garment editing remains largely underexplored. Existing methods typically follow a paradigm that applies 2D editing techniques to multi-view rendered images and subsequently updates the 3D Gaussians based on these modified images. Such methods often suffer from distortion due to unintended region contamination and multi-view inconsistencies introduced by per-image independent editing. In this paper, we propose a high-fidelity Text-guided 3D Human Garment Editor (T3HGE), which is developed based on body priors derived from SMPL eXpressive (SMPL-X). T3HGE begins with seeding Gaussians along the normals of the SMPL-X model,  followed by 2D mask filtering to obtain precisely positioned Gaussians for editing. Multi-view consistency is enforced without additional training by aggregating tokens corresponding to the same SMPL-X vertex across key views. Furthermore, T3HGE integrates a Signed Distance Function (SDF)-based human distance field with 2D masks to constrain the duplication and splitting of Gaussians, thereby effectively preventing Gaussian overflow. Experiments on multi-person and multi-garment scenarios demonstrate that T3HGE outperforms existing state-of-the-art methods in both visual quality and cross-view consistency.        </div>
     </div>
 </div>
 
@@ -257,7 +266,3 @@ Recent advances in 2D diffusion models have substantially facilitated progress i
 </div>
 
 
-## Citation
-```
-
-```
