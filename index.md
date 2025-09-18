@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: "T3HGE: High-fidelity Text-Driven 3D Human Garment Editing with Body Priors"
+title: "T3HGE: High-fidelity Text-driven 3D Human Garment Editing with Body Priors"
 authors:
 affiliations:
 paper: 
@@ -42,10 +42,7 @@ While 3D Gaussian editing has seen substantial progress, text-driven human garme
 </div>
 
 <p style="text-align:center; font-size:1rem; opacity:1; margin-top:8px; max-width:100%; margin-left:auto; margin-right:auto;">
-  <b>Overall framework of THGE</b>, which consists of three components: 
-  (1) 2D–3D Co-localization with Virtual Gaussian Seeding; 
-  (2) SMPL-X-vertex Guided Cross-view Consistent Editing; and 
-  (3) Dual-domain 2D–3D Gaussian Pruning.
+  <b>Overall framework of T3HGE</b>
 </p>
 <div style="margin-bottom:32px;"></div>
 
@@ -105,7 +102,7 @@ While 3D Gaussian editing has seen substantial progress, text-driven human garme
       <td style="border:1px solid #ddd; padding:6px;">0.0910</td>
     </tr>
     <tr style="font-weight:bold;">
-      <td style="border:1px solid #ddd; padding:6px;">THGE (Ours)</td>
+      <td style="border:1px solid #ddd; padding:6px;">T3HGE (Ours)</td>
       <td style="border:1px solid #ddd; padding:6px;">0.2543</td>
       <td style="border:1px solid #ddd; padding:6px;">0.1362</td>
     </tr>
